@@ -4,8 +4,8 @@ import { useHistory } from 'react-router-dom';
 const NewColorForm = ({ setColors }) => {
   const history = useHistory();
   const initialState = {
-    name: 'light red',
-    colorVal: '#ff5733'
+    name: '',
+    colorVal: ''
   };
   const [formData, setFormData] = useState(initialState);
   const handleChange = e => {
