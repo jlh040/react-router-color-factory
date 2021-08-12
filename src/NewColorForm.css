@@ -1,0 +1,11 @@
+.NewColorForm div{
+    margin: 20px;
+}
+
+.NewColorForm button {
+    margin-right: 20px;
+}
+
+.NewColorForm a {
+    text-decoration: none;
+}
