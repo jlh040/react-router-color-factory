@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const ColorList = ({ colors }) => {
-  console.log(colors)
   return (
     <div className="ColorList">
       <div>
@@ -10,7 +9,7 @@ const ColorList = ({ colors }) => {
         <h2><Link to="/colors/new">Add a color</Link></h2>
       </div>
       <div>
-        <h3>Please Select a Color:</h3>
+        <h3>Please select a color:</h3>
         <div>
           {colors.map(color => 
             <div>
