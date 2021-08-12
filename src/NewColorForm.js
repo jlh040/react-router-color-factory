@@ -17,11 +17,11 @@ const NewColorForm = ({ setColors }) => {
   };
   const handleSubmit = e => {
     setColors(currColors => [
-      ...currColors,
       {
         name: formData.name,
         value: formData.colorVal
-      }
+      },
+      ...currColors
     ]);
     history.push('/colors');
   };
