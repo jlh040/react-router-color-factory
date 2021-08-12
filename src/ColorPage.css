@@ -1,0 +1,11 @@
+.ColorPage {
+    height: 100%;
+}
+
+.ColorPage h1 {
+    margin-top: 0;
+}
+
+.ColorPage a {
+    color: white;
+}
