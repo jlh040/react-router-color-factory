@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import NewColorForm from './NewColorForm';
 import ColorList from './ColorList';
 import ColorPage from './ColorPage';
@@ -24,6 +24,7 @@ function App() {
           <Route exact path="/colors/:color">
             <ColorPage colorsArr={colors}/>
           </Route>
+          <Redirect to="/colors" />
         </Switch>
       </BrowserRouter>
     </div>

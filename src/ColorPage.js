@@ -1,13 +1,19 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useHistory } from 'react-router-dom';
 import './ColorPage.css';
 
 const ColorPage = ({ colorsArr }) => {
+  const history = useHistory();
   const { color: colorName } = useParams();
-  const [{ value: colorVal }] = colorsArr.filter(colorObj => colorObj.name === colorName);
+  const colorArr = colorsArr.filter(colorObj => colorObj.name === colorName);
+  
+  if (colorArr.length === 0) {
+    colorArr[0] = {};
+    history.push('/colors');
+  }
 
   return (
-    <div className="ColorPage" style={{backgroundColor: colorVal}}>
+    <div className="ColorPage" style={{backgroundColor: colorArr[0].value}}>
       <h1>This is the {colorName} page!</h1>
       <h3><Link to="/colors">Go Back</Link></h3>
     </div>
