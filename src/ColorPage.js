@@ -8,7 +8,7 @@ const ColorPage = ({ colorsArr }) => {
   const colorArr = colorsArr.filter(colorObj => colorObj.name === colorName);
   
   if (colorArr.length === 0) {
-    colorArr[0] = {};
+    colorArr[0] = {}; // so line 16 doesn't break
     history.push('/colors');
   }
 
