@@ -5,7 +5,7 @@ const ColorList = ({ colors }) => {
   return (
     <div className="ColorList">
       <div>
-        <h1>Welcome to the color factory</h1>
+        <h1>Welcome to the color factory.</h1>
         <h2><Link to="/colors/new">Add a color</Link></h2>
       </div>
       <div>
