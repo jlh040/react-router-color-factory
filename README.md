@@ -1,3 +1,7 @@
+# React Router Color Factory
+
+This is an app I created using [React Router](https://reactrouter.com/), that allows users to add and view new colors. Check out the **/src** folder to see the components and client-side routing that I implemented. Note that this is part 2 of Springboard exercise 41.2.8. Part 1 is [here](https://github.com/jlh040/react-router-dog-finder).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
