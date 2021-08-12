@@ -6,7 +6,11 @@ import ColorList from './ColorList';
 import ColorPage from './ColorPage';
 
 function App() {
-  const [colors, setColors] = useState([{name: 'blue', value: '#0000ff'}]);
+  const [colors, setColors] = useState([
+    {name: 'red', value: '#ff0000'},
+    {name: 'green', value: '#00ff00'},
+    {name: 'blue', value: '#0000ff'},
+  ]);
   return (
     <div className="App">
       <BrowserRouter>

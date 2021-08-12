@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './ColorList.css';
 
 const ColorList = ({ colors }) => {
   return (
     <div className="ColorList">
-      <div>
+      <div className="ColorList-header">
         <h1>Welcome to the color factory.</h1>
         <h2><Link to="/colors/new">Add a color</Link></h2>
       </div>
